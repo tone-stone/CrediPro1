@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credipro - Tu Crédito Fácil y Rápido</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Credipro</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#simulador">Simulador</a></li> 
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio">
+        <h2>Bienvenido a Credipro</h2>
+        <p>Créditos rápidos, seguros y confiables.</p>
+      </section>
+
+      <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <ul>
+          <li>Créditos personales</li>
+          <li>Créditos para negocios</li>
+          <li>Consolidación de deudas</li>
+        </ul>
+      </section>
+
+      <section id="simulador">
+        <h2>Simula tu Crédito</h2>
+        <label>Monto: <input type="number" id="monto" /></label>
+        <label>Plazo (meses): <input type="number" id="plazo" /></label>
+        <button onclick="calcularCredito()">Calcular</button>
+        <p id="resultado"></p>
+      </section>
+
+      <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form>
+          <input type="text" placeholder="Nombre completo" required />
+          <input type="email" placeholder="Correo electrónico" required />
+          <textarea placeholder="Escríbenos tu mensaje"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Credipro. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
