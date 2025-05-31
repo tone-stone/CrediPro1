@@ -1,41 +1,116 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-}
+ :root {
+      --color-primario: #004aad;
+      --color-secundario: #f4f4f4;
+      --color-acento: #ffc107;
+      --color-texto: #333;
+    }
 
-header {
-  background-color: #004aad;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-}
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--color-secundario);
+      color: var(--color-texto);
+      line-height: 1.6;
+    }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 1rem;
-}
+    header {
+      background-color: var(--color-primario);
+      color: white;
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
 
-main {
-  padding: 2rem;
-}
+    header h1 {
+      font-size: 2rem;
+    }
 
-section {
-  margin-bottom: 2rem;
-}
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
 
-footer {
-  background-color: #222;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-}
+    nav ul li {
+      margin: 0 1rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    .hero {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      color: var(--color-primario);
+    }
+
+    .hero p {
+      margin: 1rem 0;
+    }
+
+    .btn {
+      background-color: var(--color-acento);
+      color: #000;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .servicios ul {
+      list-style: disc inside;
+      padding-left: 1rem;
+    }
+
+    .simulador label,
+    .simulador input {
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .simulador input {
+      padding: 0.5rem;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .simulador p {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    footer {
+      background-color: var(--color-primario);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
