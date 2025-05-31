@@ -1,116 +1,161 @@
- :root {
-      --color-primario: #004aad;
-      --color-secundario: #f4f4f4;
-      --color-acento: #ffc107;
-      --color-texto: #333;
-    }
+:root {
+  --color-primario: #004aad;
+  --color-secundario: #f4f4f4;
+  --color-acento: #ffc107;
+  --color-texto: #333;
+}
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--color-secundario);
-      color: var(--color-texto);
-      line-height: 1.6;
-    }
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--color-secundario);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
 
-    header {
-      background-color: var(--color-primario);
-      color: white;
-      padding: 1.5rem 1rem;
-      text-align: center;
-    }
+header {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
 
-    header h1 {
-      font-size: 2rem;
-    }
+header h1 {
+  font-size: 2rem;
+}
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 1rem;
-    }
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
 
-    nav ul li {
-      margin: 0 1rem;
-    }
+nav ul li {
+  margin: 0 1rem;
+}
 
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    main {
-      padding: 2rem 1rem;
-      max-width: 1200px;
-      margin: auto;
-    }
+main {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
 
-    section {
-      margin-bottom: 3rem;
-    }
+section {
+  margin-bottom: 3rem;
+}
 
-    .hero {
-      background-color: white;
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: center;
-    }
+.hero {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
-    .hero h2 {
-      font-size: 2rem;
-      color: var(--color-primario);
-    }
+.hero h2 {
+  font-size: 2rem;
+  color: var(--color-primario);
+}
 
-    .hero p {
-      margin: 1rem 0;
-    }
+.hero p {
+  margin: 1rem 0;
+}
 
-    .btn {
-      background-color: var(--color-acento);
-      color: #000;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 0.5rem;
-      font-size: 1rem;
-      cursor: pointer;
-      text-decoration: none;
-    }
+.btn {
+  background-color: var(--color-acento);
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
 
-    .servicios ul {
-      list-style: disc inside;
-      padding-left: 1rem;
-    }
+.servicios ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
 
-    .simulador label,
-    .simulador input {
-      display: block;
-      margin-bottom: 1rem;
-    }
+.blog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
 
-    .simulador input {
-      padding: 0.5rem;
-      width: 100%;
-      max-width: 300px;
-    }
+.blog-post {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-    .simulador p {
-      font-weight: bold;
-      margin-top: 1rem;
-    }
+.blog-post h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
 
-    footer {
-      background-color: var(--color-primario);
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
+.blog-post p {
+  flex-grow: 1;
+  margin-bottom: 1.25rem;
+}
+
+.blog-post .btn {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.blog-post .btn:hover {
+  background-color: #0056b3;
+}
+.blog-post img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.simulador label,
+.simulador input {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.simulador input {
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.simulador p {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: var(--color-primario);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
